@@ -1,0 +1,35 @@
+.root {
+    -fx-background-color: #F8F5FF;
+}
+
+.title-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+
+.subtitle-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: gray;
+}
+
+.input-field {
+    -fx-pref-width: 250px;
+    -fx-pref-height: 40px;
+    -fx-background-radius: 8px;
+    -jfx-focus-color: #7A44F2;
+}
+
+.login-button {
+    -fx-background-color: #7A44F2;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-pref-width: 250px;
+    -fx-pref-height: 50px;
+    -fx-background-radius: 8px;
+}
+
+.error-label {
+    -fx-text-fill: red;
+    -fx-font-size: 14px;
+}

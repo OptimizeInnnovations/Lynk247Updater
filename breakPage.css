@@ -1,0 +1,185 @@
+/* General Scene Background */
+.root {
+    -fx-background-color: #ffffff;
+}
+
+/* Container Styling */
+.container {
+    -fx-background-color: linear-gradient(to bottom, #4a2680,#111112);
+    -fx-padding: 30;
+    -fx-spacing: 20;
+    -fx-alignment: center;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-effect: dropshadow(gaussian, #000000, 20, 0, 0, 8);
+}
+
+/* Button Styling */
+.jfx-button {
+    -fx-background-color: linear-gradient(to right, #541625, #d025c5);  /* Soft Blue Gradient */
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-padding: 12px 20px;
+    -fx-border-radius: 30px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 8, 0, 0, 5);
+    -fx-transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for Buttons */
+.jfx-button:hover {
+    -fx-background-color: linear-gradient(to right, #5a9dcb, #8ab8d8);  /* Slightly Darker Blue Gradient */
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* Disabled Button Style */
+.jfx-button:disabled {
+    -fx-background-color: #d1d8e0;  /* Light gray */
+    -fx-text-fill: #b0b6bb;
+    -fx-effect: none;
+}
+
+/* Label Styling */
+/* Set all visible text to white */
+.label,
+.jfx-combobox,
+.jfx-combobox .list-cell,
+.jfx-text-field,
+.jfx-text-field .text,
+#timerLabel,
+#warningLabel {
+    -fx-text-fill: white;
+}
+
+/* Timer Label Styling */
+#timerLabel {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;  /* Darker blue for the timer */
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+
+/* Warning Label for Time Breach */
+#warningLabel {
+    -fx-text-fill: #e74c3c;  /* Red warning color */
+    -fx-font-size: 14px;
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-opacity: 0;
+    -fx-font-weight: 600;
+    -fx-padding: 8px;
+    -fx-background-color: #fce4e4;  /* Light Red background for the warning */
+    -fx-border-radius: 8px;
+    -fx-text-fill: #e74c3c;
+}
+
+/* ComboBox Styling */
+.jfx-combobox {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #76baff;  /* Light blue border */
+    -fx-border-radius: 10px;
+    -fx-padding: 10px 18px;
+    -fx-font-size: 16px;
+    -fx-text-fill: #333333;
+}
+
+/* ComboBox Items */
+.jfx-combobox .list-cell {
+    -fx-font-size: 16px;
+    -fx-text-fill: #333333;
+}
+
+/* TextField Styling
+.jfx-text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #76baff;  /* Light blue border for text fields
+    -fx-border-radius: 10px;
+    -fx-padding: 18px 10px;
+    -fx-font-size: 12px;
+    -fx-text-fill: #333333;
+}
+
+/* TextField on Focus
+.jfx-text-field:focused {
+    -fx-border-color: #8ab8d8;  /* Light Blue when focused
+    -fx-background-color: #f0faff;
+}*/
+
+/* HBox & VBox Layout Styling */
+.hbox, .vbox {
+    -fx-alignment: center;
+}
+
+/* Add spacing to vboxes and hboxes */
+.vbox {
+    -fx-spacing: 25px;
+}
+
+/* Center all elements in containers */
+.centered {
+    -fx-alignment: center;
+}
+
+
+/* Default styles for the buttons */
+.pick-value-button {
+    -fx-background-color: linear-gradient(to right, #21211f, #bfbfbf);  /* Soft Blue Gradient */
+    -fx-text-fill: #ffffff;
+}
+
+.other-value-button {
+    -fx-background-color: linear-gradient(to right, #21211f, #bfbfbf);  /* Gradient from blue to purple */
+    -fx-text-fill: white;
+}
+
+/* Selected button styles */
+.pick-value-button-selected {
+    -fx-background-color: linear-gradient(to right, #541625, #d025c5);  /* Highlight color */
+    -fx-text-fill: white;
+}
+
+.other-value-button-selected {
+    -fx-background-color: linear-gradient(to right, #541625, #d025c5);  /* Highlight color */
+    -fx-text-fill: white;
+}
+
+/* Hover effect for buttons */
+.jfx-button:hover {
+    -fx-background-color: linear-gradient(to right, #21211f, #bfbfbf);  /* Slightly Darker Blue Gradient */
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* Styling for disabled button */
+.jfx-button:disabled {
+    -fx-background-color: #d1d8e0;
+    -fx-text-fill: #b0b6bb;
+    -fx-effect: none;
+}
+
+/* Styling for dropDown values */
+.combo-box {
+    -fx-text-fill: white;
+}
+
+
+.combo-box .list-cell {
+    -fx-text-fill: white;
+
+    -fx-background-color: transparent;
+}
+
+/* Selected value style (when dropdown is closed and a value is selected) */
+.combo-box .combo-box-text {
+    -fx-text-fill: white; /* Set text color to white for selected value */
+}
+
+
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #4f1973; /* optional hover effect  #813db3 */
+}
+
+.combo-box .combo-box-display-node {
+    -fx-background-color: transparent; /* or match your container background */
+    -fx-text-fill: white;
+}
