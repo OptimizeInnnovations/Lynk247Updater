@@ -183,3 +183,41 @@
     -fx-background-color: transparent; /* or match your container background */
     -fx-text-fill: white;
 }
+
+/* === ComboBox Dropdown Styling === */
+
+/* Main dropdown popup list */
+.combo-box-popup .list-view {
+    -fx-background-color: rgba(0, 0, 0, 0.9); /* Slight transparency for depth */
+    -fx-background-radius: 2px;
+    -fx-padding: 4px;
+    -fx-effect: dropshadow(gaussian, rgba(130, 36, 220, 0.5), 12, 0.3, 0, 4);
+}
+
+/* Items inside the dropdown */
+.combo-box-popup .list-view .list-cell {
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-padding: 10px 16px;
+    -fx-font-size: 14px;
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-border-radius: 6px;
+}
+
+/* Hover effect on dropdown items */
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: linear-gradient(to right, #5e1c8a, #813db3); /* Purple gradient */
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 10px;
+}
+
+/* Selected value in the ComboBox (when dropdown is closed) */
+.combo-box .combo-box-display-node {
+    -fx-background-color: #2a2a2a;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 14px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+
